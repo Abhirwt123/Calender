@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: khaki;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .calender {
+  background-color: aqua;
+  margin: auto;
+}
+.container .calender .month {
+  padding: 1rem;
+}
+.container .calender .month .date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+.container .calender .month .date h1, .container .calender .month .date p {
+  margin-bottom: 1rem;
+}
+.container .calender .weaks {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+.container .calender .date-box {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  gap: 1rem;
+  place-items: center;
+  padding-bottom: 2rem;
+}
+.container .calender .date-box div {
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+.container .calender .date-box div:hover {
+  border: 0.1rem solid grey;
+}
+.container .calender .date-box .empty {
+  border: none;
+}
+.container .calender .date-box .empty:hover {
+  border: none;
+}
+.container .calender .date-box .today {
+  background-color: aqua;
+}/*# sourceMappingURL=main.css.map */
